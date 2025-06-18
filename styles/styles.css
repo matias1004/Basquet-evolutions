@@ -1,0 +1,170 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:black;
+    height: 100vh;
+
+}
+.header{
+    margin-top: 60px;
+}
+body{
+    background-image: url(../imagenes/fondo5.png);
+}
+ul li {
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+.uno{
+    position: relative;
+    bottom: 100px;
+    left: 650px;
+}
+.dos{
+    display: inline;
+     position: relative;
+    bottom: 100px;
+    left: 650px;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "h1 h2 h3 h4"
+    ;
+    gap: 25px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.h{
+    height: auto;
+    width: 30vh;
+}
+.v{
+    height: 30vh;
+    width: auto;
+}
+.h1{
+    grid-area: h1;
+    height: 30vh;
+}
+.h2{
+    grid-area: h2;
+    height: 30vh;
+}
+.h3{
+grid-area: h3;
+height: 30vh;
+}
+.h4{
+grid-area: h4;
+height: 30vh;
+}
+
+.tienda img{
+    font-size: 10px;
+}
+img{
+    height: 30vh;
+}
+.px{
+    font-size: 20px;
+}
+.top{
+    color: black;
+    
+}
+.tu{
+    color: black;
+}
+.mi{
+    color: black;
+}
+.yo{
+    color: black;
+}
+.principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: fit-content;
+    
+}
+.principal .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: o 2px 5px rgba(0, 0, 0, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.principal .principal img{
+    width: 300px;
+    height: auto;
+}
+.principal h3{
+    font-size: 22px;
+
+}
+.principal .precio{
+    font-weight: 700;
+    font-size: 25px;
+
+}
+.principal .precio2{
+font-weight: 700;
+    font-size: 25px;
+}
+.principal .precio3{
+font-weight: 700;
+    font-size: 25px;
+}
+.principal .precio4{
+font-weight: 700;
+    font-size: 25px;
+}
+.principal .precio5{
+font-weight: 700;
+    font-size: 25px;
+}
+.pagos{
+    display: grid;
+    grid-template-areas:
+    "h1 h2 h3 v1 v2 v3"
+    ;
+    gap: 25px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.h{
+    height: auto;
+    width: 30vh;
+}
+.v{
+    height: 30vh;
+    width: auto;
+}
+.pg1{
+    grid-area: h1;
+    height: 30vh;
+}
+.pg2{
+    grid-area: h2;
+    height: 30vh;
+}
+.pg3{
+grid-area: h3;
+height: 30vh;
+}
+.pg4{
+grid-area: h4;
+height: 30vh;
+}
