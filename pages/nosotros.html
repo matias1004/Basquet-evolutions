@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basquet evolutions - Nosotros</title>
-    <link rel="stylesheet" href="../imagenes/logo3.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Basquet Evolutions</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/nosotros.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="../imagenes/logosubtitulo2.png" alt="">
-        <h1 class="top">Basquet evolutions</h1>
-        <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../pages/tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a href="../pages/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="../pages/formasdepago.html">Formas de pago</a>
-            </li>
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <a href="../index.html" class="d-flex align-items-center text-white text-decoration-none">
+        <img src="../imagenes/logosubtitulo.png" alt="Logo" width="100" class="me-2">
+        <h1 class="h4 m-0">Basquet Evolutions</h1>
+      </a>
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="./tienda.html" class="nav-link text-white">Tienda</a></li>
+          <li class="nav-item"><a href="./contacto.html" class="nav-link text-white">Contacto</a></li>
+          <li class="nav-item"><a href="./nosotros.html" class="nav-link text-white active">Nosotros</a></li>
+          <li class="nav-item"><a href="./formasdepago.html" class="nav-link text-white">Formas de Pago</a></li>
         </ul>
-        </nav>
-    </header>
-    <section>
-        <h2 class="tu">juntos creamos basquet evolutions</h2>
-        <img src="../imagenes/nosotros.png" alt="">
-        <h3>Matias:Jefe de la empresa</h3>
-        <div>
-            <h3 class="yo">Carla:Encargada del turno</h3>
-        </div>
-        <div>
-            <h3 class="yo">Raul:Encargado de logistica</h3>
-        </div>
-        <div>
-            <h3 class="yo">Maria:Encargada del marketing</h3>
-        </div>
-        <div>
-            <h3 class="yo">Jessica:Encargada de las finanzas</h3>
-        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <h2 class="text-center mb-4">Sobre Nosotros</h2>
+    <p class="text-center">Somos una tienda apasionada por el baloncesto. Traemos productos oficiales y exclusivos para fanáticos de la NBA.</p>
+
+    <section class="historia text-center mt-5">
+      <h3>Nuestra Historia</h3>
+      <p>Basquet Evolutions nació en 2020 con la idea de acercar la cultura del baloncesto a los fanáticos hispanohablantes. Comenzamos como una pequeña tienda en línea y hoy contamos con cientos de productos oficiales y clientes en toda Latinoamérica.</p>
     </section>
-    <section>
-        <div>
-            <h2 class="tu">Aca les dejamos nuestras redes sociales</h2>
+
+    <section class="equipo mt-5">
+      <h3 class="text-center mb-4">Nuestro Equipo</h3>
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3 text-center equipo-miembro">
+          <img src="../imagenes/persona1..webp" alt="Fundador" class="img-fluid rounded-circle">
+          <h4>Juan Pérez</h4>
+          <p>Fundador y CEO</p>
         </div>
-        <h4 class="mi">Whatsapp</h4>
-        <img src="../imagenes/wp.png" alt="">
+        <div class="col-6 col-md-3 text-center equipo-miembro">
+          <img src="../imagenes/persona2..jpg" alt="Marketing" class="img-fluid rounded-circle">
+          <h4>Laura Gómez</h4>
+          <p>Marketing y Ventas</p>
+        </div>
+        <div class="col-6 col-md-3 text-center equipo-miembro">
+          <img src="../imagenes/persona3..png" alt="Logística" class="img-fluid rounded-circle">
+          <h4>Carlos Ruiz</h4>
+          <p>Logística y Distribución</p>
+        </div>
+      </div>
     </section>
-    <section>
-        <h4 class="mi">Instagram</h4>
-        <img src="../imagenes/ig.png" alt="">
+
+    <section class="valores text-center mt-5">
+      <h3>Nuestros Valores</h3>
+      <ul class="list-unstyled">
+        <li>💪 Pasión por el deporte</li>
+        <li>✅ Compromiso con la calidad</li>
+        <li>🤝 Atención cercana al cliente</li>
+      </ul>
     </section>
-    <section>
-        <h4 class="mi">facebook</h4>
-        <img src="../imagenes/fb.png" alt="">
-    </section>
-    <section>
-        <h4 class="mi">X</h4>
-        <img src="../imagenes/x.png" alt="">
-    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2025 Basquet Evolutions. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

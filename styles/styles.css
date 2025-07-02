@@ -168,3 +168,255 @@ height: 30vh;
 grid-area: h4;
 height: 30vh;
 }
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+    }
+    header {
+      background-color: #212529;
+    }
+    header .navbar-brand img {
+      height: 50px;
+    }
+    header .navbar-nav .nav-link {
+      color: #f8f9fa;
+      font-weight: 600;
+    }
+    header .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+    .hero {
+      background: url('./imagenes/frentedellocal.png') center center/cover no-repeat;
+      height: 400px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      margin-bottom: 3rem;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+    footer {
+      background-color: #212529;
+      color: #adb5bd;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons img {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      cursor: pointer;
+      width: 32px;
+      margin: 0 8px;
+    }
+    .social-icons img:hover {
+      filter: none;
+    }body {
+  background-color: #f9f9f9;
+}
+
+main h2 {
+  color: #222;
+}
+
+/* styles/contacto.css */
+form .form-label {
+  font-weight: bold;
+}
+
+form button {
+  background-color: #f7b731;
+  border: none;
+}
+
+form button:hover {
+  background-color: #e09e24;
+}
+
+/* styles/nosotros.css */
+main p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1b1919;
+  text-align: center;
+}
+
+section.historia {
+  margin-top: 3rem;
+}
+
+section.historia h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1b1a1a;
+}
+
+section.equipo {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.equipo-miembro {
+  width: 200px;
+  text-align: center;
+}
+
+.equipo-miembro img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(12, 12, 12, 0.993);
+}
+
+.equipo-miembro h4 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #1f1d1d;
+}
+
+/* styles/formasdepago.css */
+ul.list-group li {
+  font-size: 1.1rem;
+  color: #141212;
+}
+/* formasdepago.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Encabezado */
+header img {
+  max-height: 60px;
+}
+
+header h1 {
+  font-weight: 600;
+}
+
+/* Títulos y subtítulos */
+main h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Lista de pagos */
+.list-group-item {
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f0f0;
+}
+
+.list-group-item img {
+  width: 32px;
+  height: auto;
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #5a189a;
+  border-color: #5a189a;
+}
+
+.btn-primary:hover {
+  background-color: #3c096c;
+  border-color: #3c096c;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* tienda.css */
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+main h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111;
+}
+main p {
+  font-size: 1.1rem;
+  color: #953939;
+}
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.btn-primary {
+  background-color: #5a189a;
+  border-color: #5a189a;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #3c096c;
+  border-color: #3c096c;
+}
+footer {
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.social-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
