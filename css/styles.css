@@ -1,0 +1,232 @@
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: compound selectors may no longer be extended.\a Consider `@extend buttons, .btn-primary` instead.\aSee https://sass-lang.com/d/extend-compound for details.\a\a    \2577 \a 34 \2502    @extend buttons.btn-primary;\d\a    \2502            ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\pages\\_home.scss 34:11  @use\a   sass\\main.scss 12:1          root stylesheet";
+}
+.hero {
+  background: url('../imagenes/frentedellocal.png') center/cover no-repeat;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,.7);
+  margin-bottom: 3rem;
+  border-radius: 10px;
+
+  h1 { font-size: 3.5rem; font-weight: 700; }
+}
+
+main h2 {
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+form {
+  .form-label { font-weight: bold; }
+
+  button {
+    background-color: #f7b731;
+    border: none;
+
+    &:hover { background-color: #e09e24; }
+  }
+}
+eader {
+  background-color: #212529;
+
+  .navbar-brand img { height: 50px; }
+
+  .nav-link {
+    color: #f8f9fa;
+    font-weight: 600;
+
+    &:hover { color: #ffc107; }
+  }
+}
+
+.header      { margin-top: 60px; }
+.uno, .dos   { position: relative; bottom: 100px; left: 650px; }
+.dos         { display: inline; }
+grid,
+.pagos {
+  display: grid;
+  gap: 25px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.grid       { grid-template-areas: 'h1 h2 h3 h4'; }
+.pagos      { grid-template-areas: 'h1 h2 h3 v1 v2 v3'; }
+
+.h, .v      { height: auto; width: 30vh; }
+.v          { height: 30vh; width: auto; }
+
+.h1 { grid-area: h1; height: 30vh; }
+.h2 { grid-area: h2; height: 30vh; }
+.h3 { grid-area: h3; height: 30vh; }
+.h4 { grid-area: h4; height: 30vh; }
+
+footer {
+  background-color: #212529;
+  color: #adb5bd;
+  padding: 20px 0;
+
+  a {
+    color: #ffc107;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+social-icons img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+  width: 32px;
+  margin: 0 8px;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform .25s ease, box-shadow .25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  &-img-top {
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: fit-content;
+
+  .producto {
+                
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+
+    img { width: 300px; height: auto; }
+    h3 { font-size: 22px; }
+
+    .precio,
+    .precio2,
+    .precio3,
+    .precio4,
+    .precio5 {
+      font-weight: 700;
+      font-size: 25px;
+    }
+  }
+}
+.btn-primary {
+  background-color: #5a189a;
+  border-color: #5a189a;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #3c096c;
+    border-color: #3c096c;
+  }
+}
+
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  z-index: 9999;
+  width: 60px; height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);       
+
+  img { width: 35px; height: 35px; filter: brightness(0) invert(1); }
+
+  &:hover { transform: scale(1.1); }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+.btn-primary {
+  background-color: #5a189a;
+  border-color: #5a189a;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #3c096c;
+    border-color: #3c096c;
+  }
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f6f8;      
+  background-image: url('../imagenes/fondo5.png');
+  height: 100vh;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

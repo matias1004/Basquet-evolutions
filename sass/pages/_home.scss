@@ -30,3 +30,6 @@ form {
     &:hover { background-color: #e09e24; }
   }
 }
+.card-button{
+  @extend buttons.btn-primary;
+}

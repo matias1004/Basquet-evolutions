@@ -16,10 +16,37 @@
   width: 60px; height: 60px;
   background-color: #25d366;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,.4);
-  @include flex-center;         
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);       
 
   img { width: 35px; height: 35px; filter: brightness(0) invert(1); }
 
   &:hover { transform: scale(1.1); }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+.btn-primary {
+  background-color: #5a189a;
+  border-color: #5a189a;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #3c096c;
+    border-color: #3c096c;
+  }
 }
