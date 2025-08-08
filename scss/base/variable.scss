@@ -1,0 +1,17 @@
+// 🎨 Colores principales
+*{
+$color-primary: #D35400;
+$color-secondary: #2C3E50;
+$color-accent: #E67E22;
+$color-light: #ECF0F1;
+$color-dark: #212121;
+$color-white: #FFFFFF;
+
+// 📏 Tipografía
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// 🔄 Transiciones y bordes
+$transition-base: all 0.3s ease;
+$border-radius-base: 8px;
+}

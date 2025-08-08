@@ -3,70 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formas de Pago | Basquet Evolutions</title>
+  <title>Formas de Pago | Basket Evolutions</title>
+  <meta name="description" content="Conoce las formas de pago disponibles en Basket Evolutions: tarjetas de crédito, débito, transferencias y billeteras virtuales con total seguridad.">
+  <meta name="keywords" content="formas de pago, pago seguro, tarjeta, transferencia, MercadoPago, baloncesto, tienda online">
+  <link rel="icon" type="image/png" href="../imagenes/logo3.png">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../styles/formasdepago.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="bg-dark text-white py-3">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between">
-      <a href="../index.html" class="d-flex align-items-center text-white text-decoration-none">
-        <img src="../imagenes/logosubtitulo.png" alt="Logo" width="100" class="me-2">
-        <h1 class="h4 m-0">Basquet Evolutions</h1>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../imagenes/logo3.png" alt="Logo Basket Evolutions">
       </a>
-      <nav>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="./tienda.html" class="nav-link text-white">Tienda</a></li>
-          <li class="nav-item"><a href="./contacto.html" class="nav-link text-white">Contacto</a></li>
-          <li class="nav-item"><a href="./nosotros.html" class="nav-link text-white">Nosotros</a></li>
-          <li class="nav-item"><a href="./formasdepago.html" class="nav-link text-white active">Formas de Pago</a></li>
-        </ul>
-      </nav>
     </div>
+    <nav class="main-nav" id="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/tienda.html">Tienda</a></li>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../pages/formasdepago.html" class="active">Formas de Pago</a></li>
+        <li><a href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
   </header>
 
-  <main class="container py-5">
-    <h2 class="text-center mb-4">Formas de Pago</h2>
-    <p class="text-center lead mb-4">Ofrecemos múltiples formas de pago para facilitar tu experiencia de compra de productos oficiales de la NBA.</p>
-
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-6">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex align-items-center">
-            <img src="../imagenes/terjeta.png" alt="Tarjeta" width="30" class="me-3">
-            Tarjetas de crédito y débito (Visa, Mastercard, American Express)
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <img src="../imagenes/bbva.png" alt="Transferencia" width="30" class="me-3">
-            Transferencias bancarias (CBU / Alias)
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <img src="../imagenes/mp.png" alt="Mercado Pago" width="30" class="me-3">
-            Mercado Pago
-          </li>
-          <li class="list-group-item d-flex align-items-center">
-            <img src="../imagenes/efe.png" alt="Efectivo" width="30" class="me-3">
-            Pago en efectivo (retiro en tienda)
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="text-center mb-5">
-      <h3>¿Es seguro comprar en Basquet Evolutions?</h3>
-      <p class="mb-3">Sí. Contamos con certificados SSL y trabajamos con plataformas de pago seguras para proteger tus datos personales y financieros.</p>
+  <!-- MAIN -->
+  <main class="formas-pago">
+    <section class="intro">
+      <h1>Formas de Pago</h1>
+      <p>En <strong>Basket Evolutions</strong> contamos con múltiples opciones para que puedas pagar de forma segura y cómoda.</p>
     </section>
 
-    <section class="text-center">
-      <h3>¿Tenés dudas sobre cómo pagar?</h3>
-      <p>Contactanos a través de nuestro formulario o por redes sociales. Nuestro equipo está listo para ayudarte.</p>
-      <a href="../pages/contacto.html" class="btn btn-primary mt-3">Ir a Contacto</a>
+    <section class="metodos">
+      <article class="metodo">
+        <img src="../imagenes/terjeta.png" alt="Pago con tarjeta de crédito y débito">
+        <h2>Tarjetas de Crédito y Débito</h2>
+        <p>Aceptamos Visa, Mastercard, American Express y más. Pagos en cuotas sin interés en promociones seleccionadas.</p>
+      </article>
+
+      <article class="metodo">
+        <img src="../imagenes/galicia.png" alt="Pago mediante transferencia bancaria">
+        <h2>Transferencia Bancaria</h2>
+        <p>Realiza tu pago directo desde tu cuenta bancaria de forma rápida y sin comisiones adicionales.</p>
+      </article>
+
+      <article class="metodo">
+        <img src="../imagenes/mp.png" alt="Pago con MercadoPago">
+        <h2>MercadoPago</h2>
+        <p>Utiliza tu cuenta de MercadoPago para abonar de forma inmediata, con la seguridad de una plataforma reconocida.</p>
+      </article>
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p class="mb-0">&copy; 2025 Basquet Evolutions. Todos los derechos reservados.</p>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Basket Evolutions - Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#"><img src="../imagenes/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="../imagenes/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="../imagenes/x.png" alt="Twitter"></a>
+    </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>

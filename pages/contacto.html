@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | Basquet Evolutions</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../styles/contacto.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basquet Evolutions - Contacto</title>
+  <meta name="description" content="Ponte en contacto con Basquet Evolutions para consultas sobre productos, pedidos o soporte técnico. Responderemos lo antes posible." />
+  <meta name="keywords" content="contacto, atención al cliente, basquet, tienda online, soporte, Basquet Evolutions" />
+  <link rel="icon" href="../imagenes/logo3.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <header class="bg-dark text-white py-3">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between">
-      <a href="../index.html" class="d-flex align-items-center text-white text-decoration-none">
-        <img src="../imagenes/logosubtitulo.png" alt="Logo" width="100" class="me-2">
-        <h1 class="h4 m-0">Basquet Evolutions</h1>
-      </a>
-      <nav>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="./tienda.html" class="nav-link text-white">Tienda</a></li>
-          <li class="nav-item"><a href="./contacto.html" class="nav-link text-white active">Contacto</a></li>
-          <li class="nav-item"><a href="./nosotros.html" class="nav-link text-white">Nosotros</a></li>
-          <li class="nav-item"><a href="./formasdepago.html" class="nav-link text-white">Formas de Pago</a></li>
-        </ul>
-      </nav>
-    </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">🏀 Basquet Evolutions</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/tienda.html">Tienda</a></li>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../pages/formasdepago.html">Formas de Pago</a></li>
+        <li><a href="../pages/contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container py-5">
-    <h2 class="text-center mb-4">Contáctanos</h2>
-    <form class="mx-auto" style="max-width: 600px;">
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre completo</label>
-        <input type="text" class="form-control" id="nombre" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-warning">Enviar</button>
-    </form>
+  <!-- Main -->
+  <main class="contacto-page">
+    <section class="hero-contacto">
+      <h1>Contáctanos</h1>
+      <p>Estamos aquí para ayudarte. Completa el formulario o utiliza nuestros datos de contacto.</p>
+    </section>
+
+    <section class="contacto-form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="contacto-info">
+      <h2>También puedes encontrarnos en:</h2>
+      <ul>
+        <li>📍 Dirección: Av. Siempre Viva 123, Buenos Aires</li>
+        <li>📞 Teléfono: +54 11 1234 5678</li>
+        <li>📧 Email: contacto@basquetevolutions.com</li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p class="mb-0">&copy; 2025 Basquet Evolutions. Todos los derechos reservados.</p>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Basquet Evolutions. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
   </footer>
+
+  <script>
+    // Menú hamburguesa
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      const expanded = toggle.getAttribute("aria-expanded") === "true" || false;
+      toggle.setAttribute("aria-expanded", !expanded);
+    });
+  </script>
 </body>
 </html>

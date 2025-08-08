@@ -1,0 +1,55 @@
+@use '../utils/variables' as v;
+
+.hero-fullscreen {
+  position: relative;
+  height: 80vh;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.95) contrast(.95);
+  }
+
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  .hero-fullscreen::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.55) 100%);
+    z-index: 1;
+  }
+
+  h1 {
+    color: #fff;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    font-size: clamp(1.6rem, 4vw, 3.2rem);
+    margin-bottom: .6rem;
+  }
+  .lead { color: rgba(255,255,255,0.92); }
+
+  .hero-cta { margin-top: 1.2rem; display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap;}
+}
+
+@media (max-width: breakpoint-mobile-max) {
+  .hero-fullscreen { height: 52vh; min-height: 280px; padding: 1.2rem 0; }
+  .hero-fullscreen h1 { font-size: 1.4rem; }
+  .hero-cta { gap: .6rem; }
+}

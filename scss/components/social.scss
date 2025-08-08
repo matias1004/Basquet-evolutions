@@ -1,0 +1,12 @@
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter .25s ease, transform .15s ease;
+}
+
+.social-icon { border-radius: 50%; padding:6px; background: white; display:inline-flex; align-items:center; justify-content:center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+@media (max-width: 425px) {
+  .social-icons img { width: 26px; height: 26px; }
+}

@@ -1,0 +1,85 @@
+@use '../base/variables' as v;
+
+.home {
+  // Hero principal
+  .hero {
+    background: linear-gradient(rgba(27, 38, 49, 0.7), rgba(27, 38, 49, 0.7)),
+                url('../img/hero-basket.jpg') center/cover no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: font primary;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .btn-primary {
+      margin-top: 2rem;
+    }
+  }
+
+  // Sección de productos destacados
+  .featured-products {
+    padding: 3rem 1rem;
+    background-color: lightblue;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2C3E50 ;
+    }
+
+    .grid-3 {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Sección de beneficios
+  .benefits {
+    padding: 3rem 1rem;
+    background-color: white;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color:  #2C3E50;
+    }
+
+    .benefit-card {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: border radius base;
+      background-color: lightblue;
+      transition: transition base;
+
+      &:hover {
+        background-color:  #E67E22;
+        color: white;
+      }
+
+      i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #D35400;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use '../base/variables' as v;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: 500;
+    color: color-dark;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 0.75rem;
+    border: 1px solid color-border;
+    border-radius: border-radius-base;
+    font-family: font-secondary;
+    font-size: 1rem;
+    transition: transition-base;
+
+    &:focus {
+      border-color: #D35400 ;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba( #D35400 , 0.2);
+    }
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}

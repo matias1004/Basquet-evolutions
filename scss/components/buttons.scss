@@ -1,0 +1,31 @@
+@use '../base/variables' as v;
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-family: v.$font-primary;
+  font-weight: 600;
+  border-radius: border radius base;
+  transition: transition base;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+
+  &-primary {
+    background-color: #D35400 ;
+    color: white;
+
+    &:hover {
+      background-color: #E67E22 ;
+    }
+  }
+
+  &-secondary {
+    background-color: #2C3E50 ;
+    color: white;
+
+    &:hover {
+      background-color: darken( #2C3E50, 8%);
+    }
+  }
+}
